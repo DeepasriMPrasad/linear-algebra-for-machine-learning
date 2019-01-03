@@ -4,16 +4,10 @@ import numpy as np
 x unknown, the solution can be found by using np.linalg.solve, which decides on the best way to invert 
 the matrix (this depends on size, stability, sparsity and other properties of A) 
 and solve the simultaneous equations
+Ax = b
 '''
 
-
-def makeArray(args):
-    return np.array(args.data).reshape(args.shape)
-
-
-data
-dims
-
-= map(makeArray, zip())
-
-Bs =
+A = np.array([3, 2, 2, 3]).reshape((2, 2))
+b = np.array([7, 8]).reshape((2, 1))
+x = np.linalg.solve(A, b)
+print(x)
