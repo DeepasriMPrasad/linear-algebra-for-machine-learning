@@ -12,16 +12,19 @@ b = np.array([7, 8]).reshape((2, 1))
 x = np.linalg.solve(A, b)
 
 
-def SimSolver(dataA, shapeA, dataB, shapeB):
+def SimSolver(d):
     """
     Simultaneous equation solver, using internal
     numpy linear algebra routines to solve the matrix inversion
     via most appropriate factorization
     """
-    A = np.array(dataA).reshape(shapeA)
-    b = np.array(dataB).reshape(shapeB)
+    A = np.array(d['dataA']).reshape(d['shapeA'])
+    b = np.array(d['dataB']).reshape(d['shapeB'])
     x = np.linalg.solve(A, b)
     return x
 
 
-print(SimSolver([3, 2, 2, 3], (2, 2), [7, 8], (2, 1)) == x)
+data = {'dataA': [3, 2, 2, 3], 'shapeA': (
+    2, 2), 'dataB': [7, 8], 'shapeB': (2, 1)}
+
+print(SimSolver(data))
