@@ -28,3 +28,20 @@ data = {'dataA': [3, 2, 2, 3], 'shapeA': (
     2, 2), 'dataB': [7, 8], 'shapeB': (2, 1)}
 
 print(SimSolver(data))
+
+
+def sim_solver(dataA, dataB, shapeA, shapeB):
+    """
+    Simultaneous equation solver, using internal
+    numpy linear algebra routines to solve the matrix inversion
+    via most appropriate factorization
+    """
+    A = np.array(dataA).reshape(shapeA)
+    b = np.array(dataB).reshape(shapeB)
+    x = np.linalg.solve(A, b)
+    return x
+
+
+data = {'dataA': [3, 2, 2, 3], 'shapeA': (
+    2, 2), 'dataB': [7, 8], 'shapeB': (2, 1)}
+print(sim_solver(**data))
