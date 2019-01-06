@@ -27,11 +27,11 @@ The modulus or size of a vector x is denoted as ** | x | **. It is the square ro
 
 ### Cosine Rule
 
-Scalar product has a relationship to scalar product.
+The cosine of the angle between two vectors has a relationship with the scalar product. If two vectors are parallel, then their dot product is the product of their modulus. If two vector are perpendicular then their dot product is 0. If two vectors are in opposite directions then their dot product is negative of the product of the modulus of the vectors.
 
 ## Vector Product
 
-AKA Cross Product, Vector Projection and Directed Area Product
+AKA Cross Product, Vector Projection and Directed Area Product. This is the projection of one vector onto the other. It is not commutative. 
 
 ## Outer Product
 
