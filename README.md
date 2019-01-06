@@ -13,3 +13,16 @@ It lets us intelligently associate patterns to outcomes (supervised learning) an
 Linear Algebra (along with probability and optimization) is the engine that powers ML to learn the mappings from patterns to outcomes.
 
 ## Solving simultaneous equations Quiz
+
+Shown using numpy in python script file with a function that takes dictionary arguments.
+
+# Dot Product
+
+Depending on the field over the vector space and context, the dot product can be referred to as scalar product or inner product, which are all equivalent. 
+
+## Modulus of Vector
+
+The modulus or size of a vector x is denoted as ** | x | **. It is the square root of a vector dot product with itself.
+
+
+
