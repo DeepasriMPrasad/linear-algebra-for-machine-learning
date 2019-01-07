@@ -1,8 +1,16 @@
 import numpy as np
 
 
-def isLinearDependent(vector_list):
-    matrix = np.array(vector_list).reshape(
-        (len(vector_list), len(vector_list)))
+def isLinearIndependent(d):
+    vectorList = d['vectorList']
+    matrix = np.array(vectorList).reshape(
+        (len(vectorList), len(vectorList)))
     rank = np.linalg.matrix_rank(matrix)
-    return (rank == len(vector_list))
+    isLinearlyIndependent = rank == len(vectorList)
+    msg = (
+        f'The vectors {vectorList} in question'
+        f'{d["questionNumber"]} are Linearly'
+        f'{"Independent" if isLinearIndependent else "Dependent"}'
+    )
+    print(msg)
+    return (isLinearIndependent)
