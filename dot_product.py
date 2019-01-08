@@ -1,8 +1,5 @@
 import numpy as np
-
-def vectorProjection(a,b):
-    np.dot(a,b) *b/np.dot(b,b)
-
+from vector_projection import vectorProjection
 # 1
 print(np.linalg.norm(np.array([1,3,4,2])))
 

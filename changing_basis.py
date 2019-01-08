@@ -1,5 +1,5 @@
 import numpy as np
-
+from vector_projection import vectorProjection
 def vectorProjection(a,b):
     np.dot(a,b) *b/np.dot(b,b)
 
