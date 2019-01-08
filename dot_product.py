@@ -9,6 +9,8 @@ x = np.array([-5,3,2,8])
 y = np.array([1,2,-1,0])
 print(np.dot(x,y))
 
+
+
 # 3
 r = np.array([3,-4,0])
 s = np.array([10,5,-6])

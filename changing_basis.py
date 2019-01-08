@@ -1,9 +1,13 @@
 import numpy as np
 
+def vectorProjection(a,b):
+    np.dot(a,b) *b/np.dot(b,b)
+
+
 def changeBasis(data):
     vector = data['vector']
     b_vectors = data['basis_vectors']
-    res = list(map(lambda b: np.cross(vector, b), b_vectors))
+    res = list(map(lambda b: vectorProjection(vector,b), b_vectors))
     return res
 
 
