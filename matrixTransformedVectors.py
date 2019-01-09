@@ -20,3 +20,4 @@ answer3 = np.linalg.inv(answer2)
 B =  [[1, 1, 1],[3,2,1],[2,1,2]]
 
 print(np.linalg.inv(B))
+
