@@ -1,10 +1,13 @@
 import numpy as np
 
 def matMul(d):
-    prod = np.matmul(np.array(d['A']).reshape(d['shapeA']),
-        np.array(d['B']).reshape(d['shapeB']))
+    A = np.array(d['A']).reshape(d['shapeA'])
+    B = np.array(d['B']).reshape(d['shapeB'])
+    prod = np.matmul(A,B)
     print(f'Question {d["questionNumber"]}')
-    print(f'{d["A"]} MatMul(*) {d["B"]}  = {prod}')
+    print(f'{A}') 
+    print('MatMul(*)') 
+    print(f'{B}  = {prod}')
     return prod
 
 dataArray = [
