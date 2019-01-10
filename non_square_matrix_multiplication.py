@@ -46,6 +46,33 @@ dataArray = [
         'shapeB':[2,3],
     },]
 
-answers = list(map(matMul, dataArray))
-print(answers)
+# answers = list(map(matMul, dataArray))
+# print(answers)
 
+
+dataArray2 = [{
+        'questionNumber': 5,
+        'A':[1,0, 1/3, 0, 1, -1/4],
+        'shapeA':[2,3],
+        'B':[6,2,3],
+        'shapeB':[3,1],
+    },
+    {
+        'questionNumber': 6,
+        'A':[1,0, 1/3, 0, 1, -1/4],
+        'shapeA':[2,3],
+        'B':[5,-1,-3,7,4,-4,1,-2,9,3,0,12],
+        'shapeB':[3,4],
+    },]
+
+
+answers2 = list(map(matMul, dataArray2))
+print(answers2)
+
+
+T3 = np.linalg.matrix_power(np.array([6,-1,2,3]).reshape([2,2]), 3)
+print('#############',T3)
+t3 = np.linalg.matrix_power(np.array([2,7,0,-1]).reshape([2,2]), 3)
+print('#############',t3)
+T5 = np.linalg.matrix_power(np.array([1,0,2,-1]).reshape([2,2]), 3)
+print('############',T5)
